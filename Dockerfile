@@ -35,8 +35,8 @@ FROM debian:buster-slim
 
 WORKDIR /usr/local/bin
 
-COPY --from=builder /app/target/release/demo .
+COPY --from=builder /app/target/release/demo-actix-web .
 
 # RUN cargo install --path .
 
-CMD ["demo"]
+CMD ["demo-actix-web"]
