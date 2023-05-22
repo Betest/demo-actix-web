@@ -9,12 +9,12 @@ use serde_json::json;
 use std::sync::Mutex;
 // use chrono::{Local};
 
-mod api;
-mod models {
-    pub mod entry_model;
+mod todo {
+    pub mod domain;
+    pub mod todo_main;
 }
-use api::services;
-use models::entry_model::TodolistEntry;
+
+use todo::{domain::todo_entity::TodolistEntry, todo_main};
 
 struct AppState {
     todolist_entries: Mutex<Vec<TodolistEntry>>,
@@ -94,7 +94,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .app_data(app_data.clone())
             .service(index)
-            .configure(services::config)
+            .configure(todo_main::config)
             .wrap(cors)
             .wrap(Logger::default())
             // .default_service(web::route().to(error_handler))
