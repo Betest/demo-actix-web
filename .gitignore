@@ -4,3 +4,4 @@
 /sonarqube_extensions
 /sonarqube_logs
 /postgresql_data
+/.vscode
