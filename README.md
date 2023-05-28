@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/yohantobon/actix-web/_apis/build/status%2Factix-web?branchName=azure-boards)](https://dev.azure.com/yohantobon/actix-web/_build/latest?definitionId=1&branchName=azure-boards)
+[![Build Status](https://dev.azure.com/yohantobon/actix-web/_apis/build/status%2FBetest.demo-actix-web?branchName=refs%2Fpull%2F2%2Fmerge)](https://dev.azure.com/yohantobon/actix-web/_build/latest?definitionId=2&branchName=refs%2Fpull%2F2%2Fmerge)
 
 Libs:
 cargo-edit
