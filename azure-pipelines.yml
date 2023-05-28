@@ -5,6 +5,11 @@
 trigger:
 - azure-boards
 
+pr:
+  branches:
+    include:
+      - '*'
+
 resources:
 - repo: self
 

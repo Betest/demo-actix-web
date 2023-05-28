@@ -1,10 +1,9 @@
 use actix_web::{get, post, put, delete, web, Responder, HttpResponse};
 use crate::AppState;
-use crate::TodolistEntry;
 use crate::todo::domain;
 
 
-use domain::todo_entity::{CreateEntryData, UpdateEntryData};
+use domain::todo_entity::{CreateEntryData, UpdateEntryData, TodolistEntry};
 
 #[get("/todolist/entries")]
 async fn get_entries(data: web::Data<AppState>) -> impl Responder {
